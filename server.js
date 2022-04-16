@@ -4,7 +4,6 @@ const app = express();
 app.set('view engine', 'ejs') // Behúzzuk az EJS-t
 
 app.get('/', (req, res) => {
-  console.log('Hello World!');
   // res.status(500).json({ message: "Error"})
 res.render('index', { text: "World" }) // Ki rendereljük az EJS-t átadva neki paramétereket kulcs értékpárokként 
 })
